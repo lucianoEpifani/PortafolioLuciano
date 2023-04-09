@@ -12,6 +12,8 @@ cerrar.addEventListener('click',() =>{
     nav.classList.remove('visible')
 })
 
+
+
 ScrollReveal().reveal('.about' , {delay: 200});
 
 ScrollReveal().reveal('.grid' , {delay: 200});
