@@ -116,7 +116,13 @@ span{
     color: white;
   }
 
+  .abrir-menu{
+    display: none;
+  }
 
+  .cerrar-menu{
+    display: none;
+  }
 
 /* ABOUT */
 
@@ -465,10 +471,441 @@ form {
   /* MEDIA QUERY */
 
   @media(max-width: 700px){ 
-        .navegacion ul{
-            width: 100%;
-            position: absolute;
-            top: 75px;
-            right: 0;
-        }
+
+    
+
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+    
+    *,*:before,*:after {
+        box-sizing: inherit;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    .contenedor{
+        width: 100%;
+        background-color: #000000;
+    }
+
+
+    hr{
+        display: none;
+    }
+
+    .encabezado{
+        position: absolute;
+        color: #ffffff;
+        top: 20rem;
+        left: 8rem;
+        font-size: 1rem;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    span{
+        color: #2F58CD;
+    }
+
+    #btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.2rem;
+        padding: 1rem;
+        width: 50%;
+        border: solid #fff 0.1rem;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 5rem;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    #btn:hover {
+        transition: all 0.3s ease-in-out;
+        background-color: #516ff3;
+        color: black;
+    }
+
+    
+    
+    #myVideo {
+        object-fit: contain;
+        width: auto;
+        height: 70rem;
+      }
+
+      /* NAVEGACION */
+
+      
+    .navegacion{
+        display: none;
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        font-size: 3rem;
+        border: 0;
+        background-color: transparent;
+        color: #111010;
+    }
+
+    .abrir-menu{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 0.5rem;
+    }
+
+    .navegacion ul li a{
+        font-size: 1.5rem;
+    }
+
+    .navegacion a{
+        padding: 0.5rem;
+    }
+
+    .navegacion a:hover{
+        color: #fff;
+        padding: 0.5rem;
+    }
+
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, rgb(46, 45, 69) 0%, rgba(81, 111, 243, 1)   35%, rgba(177, 175, 175, 0.9) 100%);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navegacion-list{
+        display: flex;
+        gap: 1.5rem;
+        flex-direction: column;
+        align-items: end;
+    }
+
+
+    /* SKILSS */
+
+
+    .about h2{
+        font-size: 3rem;
+    }
+
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 4rem;
+        color: #fff;
+    }
+    
+    .skills-contenido{
+        text-align: center;
+    }
+    
+    .skills-contenido p{
+        font-size: 1rem;
+        font-family: 'Quicksand', sans-serif;
+        margin-bottom: 5rem;
+    }
+    
+    .skills-contenido h2{
+        font-size: 2srem;
+        font-family: 'Quicksand', sans-serif;
+        padding: 1rem;
+    }
+    
+    .icono{
+        background-color: #2F58CD;
+        padding: 2rem;
+        border-radius: 2rem;
+        border: solid 0.3rem black;
+    }
+
+    
+/* LENGUAJES */
+
+
+.lenguajes{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.procentaje{
+    color: #2F58CD;
+    font-size: 1.5rem;
+    background-color: #bfbebe;
+    padding: 1.4rem 1.4rem 1.4rem 10rem;
+}
+
+.procentaje-1{
+    color: #2F58CD;
+    font-size: 1.5rem;
+    background-color: #bfbebe;
+    padding: 1.4rem 1.4rem 1.4rem 10rem;
+}
+
+.procentaje-2{
+    color: #2F58CD;
+    font-size: 1.5rem;
+    background-color: #bfbebe;
+    padding: 1.4rem 1.4rem 1.4rem 10rem;
+}
+
+.procentaje-3{
+    color: #2F58CD;
+    font-size: 1.5rem;
+    background-color: #bfbebe;
+    padding: 1.4rem 1.4rem 1.4rem 10rem;
+}
+
+.lenguaje{
+    margin: 0 auto;
+    background: none;
+    gap: 1rem;
+}
+
+
+
+/* ME */
+
+.grid{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    color: #fff;
+}
+
+.grid-parrafo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #f1f1f1;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.mi-imagen{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.iconos{
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 2rem;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+
+.iconos svg{
+    background-color: #2F58CD;
+    border-radius: 3rem;
+    padding: 0.7rem;
+}
+
+
+.grid-contenido{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: start;
+    margin-top: 5rem;
+    color: #fff;
+    font-size: 1.8rem;   
+}
+
+.grid-contenido p{
+    line-height: 3rem;
+    font-size: 2rem;
+    text-align: justify;
+    color: #b8b7b7;
+    margin-top: 4rem;
+}
+
+
+.grid-contenido img{
+    object-fit: cover;
+    height: 30rem;
+    border: #ddd groove 0.5rem;
+}
+
+.descripcion{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1.5rem;
+}
+
+.descripcion button{
+    display: flex;
+    width: 30%;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F58CD;
+    border: #000 solid 0.1rem;
+    margin-top: 2rem;
+}
+
+.btn a span{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn a {
+    background-image: linear-gradient(
+      to right,
+      #ffffff,
+      #ffffff 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+ .btn a:before{
+    content: '';
+    background: #080808;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn a:hover {
+   background-position: 0;
+  }
+
+
+  /* MIS PROYECTOS */
+
+
+
+.paginas{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.paginas img, .paginas video{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border: #ffffff solid 0.1rem;
+}
+
+.paginas h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* FORMULARIO */
+.contacto{
+    display: none;
+}
+ 
+ form {
+     color: #ffffff;
+     display: grid;
+     grid-template-columns: repeat(1 ,1fr);
+     width: 100%;
+     height: auto;
+     margin-top: 30rem;
+     border: #ffffff solid 0.1rem;
+     background-image: url(/HTML/img/iStock-1219733369.jpg);
+     background-repeat: no-repeat;
+     background-position: center left;
+     background-size: cover;
+   }
+   
+   label {
+     font-weight: bold;
+     margin-top: 10px;
+     font-size: 1.2rem;
+   }
+   
+   input,
+   textarea {
+     border-radius: 5px;
+     border: none;
+     width: 100%;
+   }
+   
+   input[type="submit"] {
+     background-color: #2F58CD;
+     color: white;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: #ffffff solid 0.1rem;
+     font-size: 1.2rem;
+     transition: all 0.3s ease-in-out;
+     margin-top: 2rem;
+   }
+   
+   input[type="submit"]:hover {
+     transition: all 0.3s ease-in-out;
+     background-color: #516ff3;
+   }
+
+
   }
